@@ -1,0 +1,13 @@
+version: '3'
+services:
+  application:
+    container_name: sample-spring-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9191:8080"
+    restart: always
+    entrypoint: java -jar -Dspring.profiles.active=default app.jar
+#    volumes:
+#      - /home/ubuntu/upload:/home/ubuntu/upload

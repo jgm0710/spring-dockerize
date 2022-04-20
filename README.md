@@ -1,4 +1,4 @@
-# Spring Deployment setting with docker
+# Spring deployment setting with docker
 
 ## 파일 구조
 

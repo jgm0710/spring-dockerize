@@ -86,7 +86,7 @@ ports:
       - "9191:8080"
 ```
 
-entrypoint option 을 사용하여 build 된 spring jar file 을 실행합니다.
+`entrypoint` option 을 사용하여 build 된 spring jar file 을 실행합니다.
 
 실행하려는 실행 환경이 default 이기 때문에 `-Dspring.profiles.active` option 은 생략이 가능하지만, 
 실행하려는 profile option 이 달라질 경우 profile 을 지정하여 실행할 수 있습니다. 
@@ -108,7 +108,7 @@ spring container 내부의 directory 와 ubuntu local pc 의 볼륨을 일치시
 
 ## 실행
 
-프로젝트를 실행 시키기 위해서는 우선 build/libs directory 에 build 된 spring jar file 이 존재해야 합니다.
+프로젝트를 실행 시키기 위해서는 우선 `build/libs` directory 에 build 된 spring jar file 이 존재해야 합니다.
 
 gradlew 를 사용하여 프로젝트를 build 해 줍니다.
 

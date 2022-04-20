@@ -17,7 +17,7 @@ ARG JAR_FILE=build/libs/*SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar
 ```
 
-### Description
+#### Description
 
 spring jar file 을 실행할 수 있도록, container 내부적으로 jdk image 가 필요합니다.
 
